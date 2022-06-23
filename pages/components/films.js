@@ -6,7 +6,7 @@ import "react-responsive-carousel/lib/styles/carousel.min.css";
 import _ from "lodash";
 import Link from "next/link";
 //temp Data
-import filmData from "../data/PopupContent";
+import filmData from "../../data/PopupContent";
 //This import prevents hydration issues from occurring (HTML tags inside div tags)
 import dynamic from "next/dynamic";
 const ReactPlayer = dynamic(() => import("react-player/lazy"), { ssr: false });
