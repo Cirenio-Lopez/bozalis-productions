@@ -9,7 +9,10 @@ function Festivals() {
           <div className="content-wrapper">
             <div className="content-block">
               <div className="still">
-                <img src="https://static.wixstatic.com/media/616242_7476564a4dae48b19ac6e5729c85312e~mv2.jpg/v1/fill/w_600,h_252,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_0661_JPG.jpg" />
+                <img
+                  src="https://static.wixstatic.com/media/616242_7476564a4dae48b19ac6e5729c85312e~mv2.jpg/v1/fill/w_600,h_252,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/IMG_0661_JPG.jpg"
+                  alt="Valentines Night"
+                />
               </div>
               <div className="title">Valentines Night</div>
               <div className="description">
@@ -75,7 +78,10 @@ function Festivals() {
             </div>
             <div className="content-block">
               <div className="still">
-                <img src="https://static.wixstatic.com/media/616242_b1cb9587934d46e0950ebf6c1ee7059e~mv2.jpg/v1/fill/w_600,h_338,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/spudder.jpg" />
+                <img
+                  src="https://static.wixstatic.com/media/616242_b1cb9587934d46e0950ebf6c1ee7059e~mv2.jpg/v1/fill/w_600,h_338,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/spudder.jpg"
+                  alt="Spud"
+                />
               </div>
               <div className="title">Spud</div>
               <div className="description">
@@ -137,7 +143,10 @@ function Festivals() {
             </div>
             <div className="content-block">
               <div className="still">
-                <img src="https://static.wixstatic.com/media/616242_74c5f5553f1c4a6b888546e1f14a9e4b~mv2.jpg/v1/fill/w_600,h_337,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/17869532639191846_edited.jpg" />
+                <img
+                  src="https://static.wixstatic.com/media/616242_74c5f5553f1c4a6b888546e1f14a9e4b~mv2.jpg/v1/fill/w_600,h_337,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/17869532639191846_edited.jpg"
+                  alt="Scam of the Century: The Zack and Cody Danimals Sweepstakes"
+                />
               </div>
               <div className="title">
                 Scam of the Century: The Zack and Cody Danimals Sweepstakes

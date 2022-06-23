@@ -25,7 +25,7 @@ function Films() {
                     trigger={
                       <div className="film">
                         <div className="film-cover">
-                          <img src={film.popup_img} />
+                          <img src={film.popup_img} alt={film.video.title} />
                         </div>
                         <div className="film-desc-wrapper">
                           <div className="film-title">{film.video.title}</div>
@@ -50,12 +50,13 @@ function Films() {
                               controls={true}
                               playing={false}
                             />
-                            {film.carousel_img.map((img) => {
+                            {film.carousel_img.map((img, index) => {
                               return (
                                 <img
                                   className="img-carousel"
                                   src={img}
                                   key={img}
+                                  alt={film.video.title + " " + index}
                                 />
                               );
                             })}
