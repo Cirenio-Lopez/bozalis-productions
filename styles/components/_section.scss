@@ -1,0 +1,195 @@
+.section-container {
+  display: block;
+  flex-shrink: 0;
+  transform: none;
+  position: relative;
+  overflow: visible;
+  max-width: 1440px;
+  width: 100%;
+  height: min-content;
+  flex: 0 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  .section-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 100px;
+    width: 100%;
+    height: auto;
+    max-width: 1440px;
+    .title-wrapper {
+      top: 100px;
+      position: sticky;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      opacity: 1;
+      flex-shrink: 0;
+      width: 50%;
+      height: auto;
+      flex: 1 0 0px;
+      flex-shrink: 0;
+      white-space: pre-wrap;
+      overflow-wrap: break-word;
+      word-break: break-word;
+      h2 {
+        font-weight: 400;
+        color: rgb(255, 255, 255);
+        font-size: 72px;
+        letter-spacing: -2.5px;
+        text-align: left;
+      }
+    }
+    .content-container {
+      display: block;
+      flex-shrink: 0;
+      opacity: 0.8;
+      width: 50%;
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        padding: 0px;
+        width: 100%;
+        height: auto;
+        .content-block {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: flex-start;
+          padding: 0px;
+          width: 100%;
+          height: auto;
+          margin-bottom: 60px;
+          .still {
+            border-radius: 25px;
+            overflow: hidden;
+          }
+          .about-still {
+            height: 500px;
+          }
+          .title {
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+            font-size: 46px;
+            letter-spacing: -0.3px;
+            line-height: 1.4em;
+            text-align: left;
+            a {
+              color: inherit;
+              text-decoration: none;
+              svg {
+                height: 46px;
+              }
+            }
+            .title-hover {
+              opacity: 1;
+              transition: 0.3s;
+            }
+            .title-hover:hover {
+              opacity: 0.7;
+            }
+          }
+          .description {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: auto;
+            flex: 0 0 auto;
+            flex-shrink: 0;
+            white-space: pre-wrap;
+            overflow-wrap: break-word;
+            word-break: break-word;
+            opacity: 0.7;
+            font-weight: 400;
+            color: rgb(255, 255, 255);
+            font-size: 24px;
+            letter-spacing: -0.3px;
+            line-height: 1.7em;
+            text-align: left;
+            .award {
+              .festival {
+                color: $secondary;
+                text-decoration: underline;
+              }
+            }
+            .about {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $layout-breakpoint-medium) {
+  .section-container {
+    .section-wrapper {
+      flex-direction: column;
+      .title-wrapper {
+        padding-bottom: 16px;
+        position: relative;
+        top: 0;
+      }
+      .content-container {
+        width: 100%;
+        .content-wrapper {
+          .content-block {
+            .title {
+              padding-top: 16px;
+            }
+            .about-still {
+              padding-top: 16px;
+              height: 700px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $layout-breakpoint-small) {
+  .section-container {
+    .section-wrapper {
+      flex-direction: column;
+      padding: 75px 20px;
+      .title-wrapper {
+        width: 100%;
+        padding-bottom: 16px;
+        position: relative;
+        top: 0;
+      }
+      .content-container {
+        width: 100%;
+        .content-wrapper {
+          .content-block {
+            .title {
+              padding-top: 16px;
+              .mobile {
+                font-size: 22px;
+              }
+            }
+            .description {
+              font-size: 20px;
+            }
+            .about-still {
+              padding-top: 16px;
+              height: 400px;
+            }
+          }
+          .still {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}
