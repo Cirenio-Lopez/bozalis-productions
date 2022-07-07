@@ -35,6 +35,7 @@ nav {
       flex: 0 0 auto;
       flex-shrink: 0;
       font-size: 48px;
+      cursor: pointer;
     }
     .nav-items {
       position: relative;
@@ -51,16 +52,29 @@ nav {
 @media (max-width: $layout-breakpoint-small) {
   nav {
     .nav-container {
+      background: rgba(43, 24, 14, 0);
+      transition: 0.3s;
+      display: flex;
+      opacity: 1;
       .nav-items {
         display: none;
       }
       .nav-items-small {
         display: block;
+        width: 36px;
         a {
           color: inherit;
           height: 48px;
         }
       }
+    }
+    .darken {
+      background: rgba(43, 24, 14, 0.8);
+    }
+    .hidden {
+      opacity: 0;
+      pointer-events: none;
+      cursor: default;
     }
   }
 }

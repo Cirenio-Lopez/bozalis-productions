@@ -26,8 +26,10 @@
       width: 100%;
       margin-bottom: 40px;
     }
-    .film {
+    .film-container {
       width: 49%;
+    }
+    .film {
       cursor: pointer;
       .film-cover {
         // width: 100%;
@@ -87,6 +89,9 @@
         width: 100%;
         padding-top: 20px;
       }
+    }
+    .film-container {
+      width: 100% !important;
     }
   }
 }

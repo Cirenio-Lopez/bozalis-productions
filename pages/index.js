@@ -1,22 +1,90 @@
-import Nav from "./components/nav";
-import Header from "./components/header";
-import Films from "./components/films";
-import Festivals from "./components/festivals";
-import About from "./components/about";
-import Socials from "./components/socials";
-import Contact from "./components/contact";
+import Nav from "../components/nav";
+import Header from "../components/header";
+import Films from "../components/films";
+import Festivals from "../components/festivals";
+import About from "../components/about";
+import Socials from "../components/socials";
+import Contact from "../components/contact";
+import client from "../apolloClient";
+import { gql } from "@apollo/client";
 
-function Index() {
+function Index({ filmData, awardData, aboutData }) {
   return (
     <>
       <Nav />
       <Header />
-      <Films />
-      <Festivals />
-      <About />
+      <Films filmData={filmData} />
+      <Festivals awardData={awardData} />
+      <About aboutData={aboutData} />
       <Socials />
       <Contact />
     </>
   );
 }
 export default Index;
+
+export async function getStaticProps() {
+  const { data: filmData } = await client.query({
+    query: gql`
+      {
+        films(orderBy: publishedAt_DESC) {
+          id
+          author
+          authorLink
+          description
+          festivals
+          title
+          videoLink
+          role
+          coverImage {
+            id
+            url
+          }
+          carouselImages {
+            id
+            url
+          }
+        }
+      }
+    `,
+  });
+
+  const { data: awardData } = await client.query({
+    query: gql`
+      {
+        awards(orderBy: publishedAt_DESC) {
+          id
+          filmTitle
+          filmImage {
+            id
+            url
+          }
+          filmAwards {
+            awardTitle
+            awardLink
+            awardDescription
+          }
+        }
+      }
+    `,
+  });
+
+  const { data: aboutData } = await client.query({
+    query: gql`
+      {
+        abouts(last: 1) {
+          id
+          description
+          aboutImages {
+            id
+            url
+          }
+        }
+      }
+    `,
+  });
+
+  return {
+    props: { filmData, awardData, aboutData },
+  };
+}
