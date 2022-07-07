@@ -41,7 +41,6 @@
         margin-bottom: 20px;
         img {
           height: 100%;
-          filter: sepia(100%);
           transition: 0.5s;
         }
       }
@@ -66,7 +65,6 @@
     .film:hover {
       .film-cover {
         img {
-          filter: sepia(0%);
           transform: scale(1.025);
         }
       }
