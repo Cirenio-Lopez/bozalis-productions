@@ -17,6 +17,10 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Thomas Bozalis" />
         <meta name="twitter:image" content="/metaCard.png" />
+        <meta
+          name="twitter:description"
+          content="Rising Film Maker | Portfolio for Thomas Bozalis"
+        />
       </Head>
       <Component {...pageProps} />
     </>
