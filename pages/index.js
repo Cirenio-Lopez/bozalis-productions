@@ -5,6 +5,7 @@ import Festivals from "../components/festivals";
 import About from "../components/about";
 import Socials from "../components/socials";
 import Contact from "../components/contact";
+import Footer from "../components/footer";
 import client from "../apolloClient";
 import { gql } from "@apollo/client";
 
@@ -18,6 +19,7 @@ function Index({ filmData, awardData, aboutData }) {
       <About aboutData={aboutData} />
       <Socials />
       <Contact />
+      <Footer />
     </>
   );
 }
