@@ -52,7 +52,7 @@ nav {
 @media (max-width: $layout-breakpoint-small) {
   nav {
     .nav-container {
-      background: rgba(43, 24, 14, 0);
+      background: rgba(24, 24, 24, 0);
       transition: 0.3s;
       display: flex;
       opacity: 1;
@@ -69,7 +69,7 @@ nav {
       }
     }
     .darken {
-      background: rgba(43, 24, 14, 0.8);
+      background: rgba(24, 24, 24, 0.8);
     }
     .hidden {
       opacity: 0;
