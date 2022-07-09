@@ -32,7 +32,6 @@ export async function getStaticProps() {
           author
           authorLink
           description
-          festivals
           title
           videoLink
           role

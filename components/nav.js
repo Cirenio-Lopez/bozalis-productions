@@ -36,7 +36,11 @@ function Nav() {
         >
           TB
         </div>
-        <div className="nav-items">thomasbozalisfilm@gmail.com</div>
+        <div className="nav-items">
+          <Link href="mailto:thomasbozalisfilm@gmail.com">
+            <a>thomasbozalisfilm@gmail.com</a>
+          </Link>
+        </div>
         <div className="nav-items-small">
           <Link href="mailto:thomasbozalisfilm@gmail.com">
             <a>

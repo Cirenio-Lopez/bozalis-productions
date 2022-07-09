@@ -65,20 +65,17 @@ function Films({ filmData }) {
                           </Carousel>
                         </div>
                         <div className="info-wrapper">
-                          <Link href={film.authorLink}>
+                          {/* <Link href={film.authorLink}>
                             <a>
                               <span className="author">{film.author}</span>
                             </a>
-                          </Link>
+                          </Link> */}
 
                           <Link href={film.videoLink}>
                             <a>
                               <span className="title">{film.title}</span>
                             </a>
                           </Link>
-                          <span className="festivals">
-                            Festivals: {film.festivals}
-                          </span>
                           <span className="description">
                             {film.description}
                           </span>

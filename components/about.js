@@ -34,9 +34,6 @@ function About({ aboutData }) {
         <div className="content-container">
           <div className="content-wrapper">
             <div className="content-block">
-              <div className="description">
-                <div className="about">{aboutData.abouts[0].description}</div>
-              </div>
               <div className="still about-still">
                 <Carousel showThumbs="false" infiniteLoop autoPlay>
                   {aboutData.abouts[0].aboutImages.map((image) => {
@@ -49,6 +46,9 @@ function About({ aboutData }) {
                     );
                   })}
                 </Carousel>
+              </div>
+              <div className="description">
+                <div className="about">{aboutData.abouts[0].description}</div>
               </div>
             </div>
           </div>
