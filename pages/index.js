@@ -29,7 +29,7 @@ export async function getStaticProps() {
   const { data: filmData } = await client.query({
     query: gql`
       {
-        films(orderBy: publishedAt_DESC) {
+        films(orderBy: publishedAt_DESC, first: 100) {
           id
           author
           authorLink
